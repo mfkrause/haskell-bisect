@@ -6,6 +6,7 @@ To use it, load the module `bisect.hs` into `ghci` and use the function as follo
 
 `bisect f a b eps` where `f` is the function to find the root for, `a` and `b` the interval in which to search for (`[a, b]`) and `eps` the tolerance. For example, to find the root in the interval `[10, 14]` for `f(x) = sin(x)` with a tolerance of `10^(-9)`, use the following function call:
 
-`bisect sin 10 14 (10**(-9))`
-
-... which produces the following output: `12.566370614338666`
+```
+*Main> bisect sin 10 14 (10**(-9))
+12.566370614338666
+```
